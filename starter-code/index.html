@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Todo List</title>
+  <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>ToDo</h1>
+    </header>
+    <form class="task-form">
+      <input type="text" class="new-item-description" placeholder="What do you need to do?">
+      <button type="submit" class="add-task button">Add Task</button>
+    </form>
+    <ul class="task-list">
+      <li>
+        <input type="checkbox">
+        <span class="item">First Item</span>
+        <a href="#" class="edit">Edit</a>
+        <a href="#" class="remove">Remove</a>
+      </li>
+      <li class="completed">
+        <input type="checkbox" checked>
+        <span class="item">Second Item</span>
+        <a href="#" class="edit">Edit</a>
+        <a href="#" class="remove">Remove</a>
+      </li>
+      <li>
+        <form class="editor">
+          <input type="text" value="Todo in edit mode">
+          <button type="submit" class="button">Save</button>
+        </form>
+      </li>
+    </ul>
+    <div class="count-wrapper">
+      <p>You have <span class="count">0 todos</span> left to complete.</p>
+      <button class="delete-tasks button delete">Delete Tasks</button>
+      <button class="clear-completed button">Clear Completed</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
